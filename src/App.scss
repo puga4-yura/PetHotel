@@ -1,0 +1,43 @@
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+select {
+  outline: none;
+  border: none;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+}
+input {
+  background: transparent;
+  border: none;
+  outline: none;
+
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+
+  .main-wrapper {
+    display: flex;
+    height: 100%;
+    flex-grow: 1;
+
+    > div {
+      width: 50%;
+    }
+
+    .main-wrapper_left-info {
+      border-top: solid 1px #f1f1f1;
+      padding-left: 90px;
+      padding-top: 45px;
+      width: 60%;
+    }
+  }
+}

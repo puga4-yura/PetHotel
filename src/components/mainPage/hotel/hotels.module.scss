@@ -1,0 +1,141 @@
+.hotel_containerScroll {
+  height: 100%;
+  overflow: hidden;
+
+  .hotel_wrapScroll {
+    height: 73%;
+    overflow: auto;
+
+  }
+}
+.hotel_titleContainer {
+  padding: 15px 0;
+
+  .hotel_title {
+    color: #3a3a3a;
+    font-size: 21px;
+    font-weight: bold;
+  }
+  .hotel_subTitle {
+    margin-left: 10px;
+    color:  #7479a3;
+    font-size: 14px;
+  }
+}
+
+.hotel_wrap {
+  border-top:  solid 1px #ebebeb;
+  padding: 15px 30px 0 0;
+  display: flex;
+
+  .hotel_imgContainer {
+    min-width: 246px;
+    height: 226px;
+    background: #7479a3;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+
+  .hotel_wrapDesc {
+    width: 100%;
+
+    .hotel_price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #383838;
+      text-align: right;
+    }
+
+
+
+    .hotel_mainDescriptionWrap {
+      display: flex;
+      justify-content: space-between;
+
+      .hotel_star {
+        margin: 17px 0;
+        position: relative;
+        //display: block;
+        color: red;
+        width: 0px;
+        height: 0px;
+        border-right:  33px solid transparent;
+        border-bottom: 33px solid transparent;
+        -moz-transform:    rotate(35deg);
+        -webkit-transform: rotate(35deg);
+        -ms-transform:     rotate(35deg);
+        -o-transform:      rotate(35deg);
+        //
+        //&:before,
+        //&:after {
+        //  content: "";
+        //  height: 0;
+        //  width: 0;
+        //  position: absolute;
+        //}
+
+        &:before {
+          border-bottom: 27px solid red;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          position: absolute;
+          height: 0;
+          width: 0;
+          top: -15px;
+          left: -32px;
+          display: block;
+          content: '';
+          -webkit-transform: rotate(-35deg);
+          -moz-transform:    rotate(-35deg);
+          -ms-transform:     rotate(-35deg);
+          -o-transform:      rotate(-35deg);
+        }
+
+        &:after {
+          position: absolute;
+          display: block;
+          color: red;
+          top: 1px;
+          left: -105px;
+          width: 0px;
+          height: 0px;
+          border-right: 33px solid transparent;
+          border-bottom: 23px solid red;
+          border-left: 33px solid transparent;
+          -webkit-transform: rotate(-70deg);
+          -moz-transform:    rotate(-70deg);
+          -ms-transform:     rotate(-70deg);
+          -o-transform:      rotate(-70deg);
+          content: '';
+        }
+      }
+
+      .hotel_countVisit {
+        color: #858585;
+        font-size: 13px;
+      }
+
+      .hotel_mainDescription {
+        color: #29314e;
+        font-size: 18px;
+
+
+      }
+    }
+
+    .hotel_titleDescription {
+      color: #292953;
+      font-size: 14px;
+      margin-top: 10px;
+
+
+    }
+
+    .hotel_subTitleDescription {
+      color: #7782aa;
+      font-size: 14px;
+    }
+  }
+
+
+}
