@@ -29,12 +29,10 @@ function App(props) {
               mapElement={<div style={{ height: `100%` }} />}
             />
           </div>
-{/*           <Route path='/' render={() =>  <hotelsContainer />}/>
-           <Route path='/Profile' render={() =>  <Profile />}/>*/}
         </div>
 
     </div>
-  );
-}
+    </BrowserRouter>
+  )};
 
 export default App;

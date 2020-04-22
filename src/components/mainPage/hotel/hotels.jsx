@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 import s from "./hotels.module.scss"
+/*import '~slick-carousel/slick/slick.css';
+import "~slick-carousel/slick/slick-theme.css";*/
+import Slider from "react-slick";
 import * as axios from 'axios'
+import SimpleSlider from '../slider/slider'
 
 class Hotel extends Component {
 
@@ -17,7 +21,9 @@ class Hotel extends Component {
           <div className={s.hotel_wrapScroll}>
             <section>
               <div className={s.hotel_wrap}>
-                <div className={s.hotel_imgContainer}></div>
+                <div className={s.hotel_imgContainer}>
+                  <SimpleSlider />
+                </div>
                 <div className={s.hotel_wrapDesc}>
                   <div className={s.hotel_mainDescriptionWrap}>
                     <div className={s.hotel_mainDescription}>Друг - центр ветеринарнои медицини</div>
@@ -36,12 +42,10 @@ class Hotel extends Component {
 
 
             <section>
-              <div className={s.hotel_titleContainer}>
-                <span className={s.hotel_title}>Отели</span>
-                <span className={s.hotel_subTitle}>32 результата</span>
-              </div>
               <div className={s.hotel_wrap}>
-                <div className={s.hotel_imgContainer}></div>
+                <div className={s.hotel_imgContainer}>
+                  <SimpleSlider />
+                </div>
                 <div className={s.hotel_wrapDesc}>
                   <div className={s.hotel_mainDescriptionWrap}>
                     <div className={s.hotel_mainDescription}>Друг - центр ветеринарнои медицини</div>
@@ -60,12 +64,10 @@ class Hotel extends Component {
 
 
             <section>
-              <div className={s.hotel_titleContainer}>
-                <span className={s.hotel_title}>Отели</span>
-                <span className={s.hotel_subTitle}>32 результата</span>
-              </div>
               <div className={s.hotel_wrap}>
-                <div className={s.hotel_imgContainer}></div>
+                <div className={s.hotel_imgContainer}>
+                  <SimpleSlider />
+                </div>
                 <div className={s.hotel_wrapDesc}>
                   <div className={s.hotel_mainDescriptionWrap}>
                     <div className={s.hotel_mainDescription}>Друг - центр ветеринарнои медицини</div>
@@ -84,12 +86,10 @@ class Hotel extends Component {
 
 
             <section>
-              <div className={s.hotel_titleContainer}>
-                <span className={s.hotel_title}>Отели</span>
-                <span className={s.hotel_subTitle}>32 результата</span>
-              </div>
               <div className={s.hotel_wrap}>
-                <div className={s.hotel_imgContainer}></div>
+                <div className={s.hotel_imgContainer}>
+                  <SimpleSlider />
+                </div>
                 <div className={s.hotel_wrapDesc}>
                   <div className={s.hotel_mainDescriptionWrap}>
                     <div className={s.hotel_mainDescription}>Друг - центр ветеринарнои медицини</div>

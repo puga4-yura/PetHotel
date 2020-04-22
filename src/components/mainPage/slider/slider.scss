@@ -1,0 +1,21 @@
+.slides {
+  width: 246px;
+  height: 226px;
+
+  img {
+    height: 226px;
+  }
+
+  .slick-dots {
+    bottom: 0;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .slick-prev {
+    left: 0;
+    z-index: 1;
+  }
+}

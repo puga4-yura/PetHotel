@@ -32,6 +32,10 @@ let Filter = () => {
             options={option}
             theme={customTheme}
             placeholder="Животные"
+            сlassName="select"
+            isMulti
+            autoFocus
+            isSearchable
           />
         </div>
         <div className={s.filterContainer_selectWrap}>
