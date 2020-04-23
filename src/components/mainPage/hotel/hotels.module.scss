@@ -1,13 +1,170 @@
+.hotel_changeVisibButton {
+  background: #fff9f4;
+  height: 47px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 10px;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 18px;
+    background: url("../../../assets/img/right.svg") no-repeat;
+  }
+
+  &.rotate {
+    &:before {
+      transform: rotate(180deg);
+    }
+  }
+
+}
+
+.hotel_tabsWrap {
+  display: flex;
+  min-height: 190px;
+  margin-right: 26px;
+
+  .hotel_tabContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+    flex: 1;
+
+    > div {
+      &:not(.hotel_switchContainer){
+        display: none;
+      }
+
+      &:target {
+        display: flex;
+      }
+    }
+
+
+
+    .hotel_switchContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background: #ffd9b7;
+      border-radius: 20px;
+      padding: 10px 0;
+      width: 42px;
+
+
+      a {
+        background-image: url("../../../assets/img/tab_icon.png");
+        width: 21px;
+        height: 22px;
+
+        &.serviceTab {
+          background-position: 0 0 ;
+        }
+
+        &.hotelTab {
+          background-position: 0 -34px;
+        }
+        &.ratingTab{
+          background-position: 0 -70px;
+        }
+
+        &.locationTab {
+          background-position: 0 -101px;
+        }
+
+        &:hover {
+          transform: scale(1.12);
+          transition: 0.5s ease-in-out all;
+        }
+      }
+
+
+    }
+
+    .hotel_tabServicesContainer {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      padding-left: 20px;
+
+      .hotel_tabsNameService {
+        color: #7782aa;
+        font-size: 14px;
+      }
+
+      .hotel_serviceItem {
+        width: 50%;
+        margin-right: 35px;
+      }
+
+      .hotel_tabsMainNameService {
+        color: #464646;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .hotel_tabsNameServiceWrap {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+
+        img {
+            background: red;
+        }
+
+        .hotel_tabsPriceService {
+          color: #464646;
+          font-size: 14px;
+        }
+      }
+
+    }
+  }
+
+  .hotel_bookContainer {
+    .hotel_imgBook {
+      background-image: url("../../../assets/img/undraw-booking-33-fn@3x.png");
+      background-size: contain;
+      width: 135px;
+      height: 94px;
+    }
+
+    .hotel_bookButton {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: bold;
+      box-sizing: border-box;
+      padding: 14px 22px;
+      margin-top: 36px;
+      /* width: 149px; */
+      /* height: 50px; */
+      border-radius: 25px;
+      box-shadow: 0 6px 11px 0 rgba(252, 167, 93, 0.4);
+      background-image: linear-gradient(99deg, #ffb472 6%, #ea9014 99%);
+
+    }
+  }
+}
+
+
 .hotel_containerScroll {
   height: 100%;
   overflow: hidden;
 
   .hotel_wrapScroll {
-    height: calc( 100vh - 270px );
+    height: calc(100vh - 270px);
     overflow: auto;
 
   }
 }
+
 .hotel_titleContainer {
   padding: 15px 0;
 
@@ -16,25 +173,25 @@
     font-size: 21px;
     font-weight: bold;
   }
+
   .hotel_subTitle {
     margin-left: 10px;
-    color:  #7479a3;
+    color: #7479a3;
     font-size: 14px;
   }
 }
 
 .hotel_wrap {
-  border-top:  solid 1px #ebebeb;
+  border-top: solid 1px #ebebeb;
   padding: 15px 30px 15px 0;
   display: flex;
 
-  .hotel_imgContainer {
+  .hotel_photoMainContainer {
     min-width: 246px;
     height: 226px;
     width: 246px;
     margin-right: 20px;
     border-radius: 5px;
-
   }
 
   .hotel_wrapDesc {
@@ -46,8 +203,6 @@
       color: #383838;
       text-align: right;
     }
-
-
 
     .hotel_mainDescriptionWrap {
       display: flex;
@@ -62,8 +217,6 @@
       .hotel_mainDescription {
         color: #29314e;
         font-size: 18px;
-
-
       }
     }
 
@@ -71,8 +224,6 @@
       color: #292953;
       font-size: 14px;
       margin-top: 10px;
-
-
     }
 
     .hotel_subTitleDescription {

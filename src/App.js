@@ -5,7 +5,7 @@ import hotelsContainer from "./components/mainPage/hotel/hotels.module.scss";
 import {BrowserRouter, Route} from "react-router-dom";
 import Filter from  "./components/mainPage/filters/filters";
 import WrappedMap  from "./components/mainPage/map/map"
-import Hotel  from "./components/mainPage/hotel/hotels"
+import HotelContainer  from "./components/mainPage/hotel/hotelContainer"
 
 
 
@@ -19,7 +19,7 @@ function App(props) {
         <div className="main-wrapper">
           <div className="main-wrapper_left-info">
             <Filter />
-            <Hotel />
+            <HotelContainer />
           </div>
           <div>
             <WrappedMap

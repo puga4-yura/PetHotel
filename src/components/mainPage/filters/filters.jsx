@@ -10,7 +10,12 @@ const option = [
 let Filter = () => {
   const option = [
     {value: 'выгул', label: 'sadsad' },
-    {value: 'jkblglj', label: 'adsdad'}
+    {value: 'jkblglj1', label: 'adsdad'},    {value: 'выгул31', label: 'sadsad' },
+    {value: 'jkblglj2', label: 'adsdad'},    {value: 'выгул12', label: 'sadsad' },
+    {value: 'jkblglj3', label: 'adsdad'},    {value: 'выгул21', label: 'sadsad' },
+    {value: 'jkblglj4', label: 'adsdad'},    {value: 'выгул61', label: 'sadsad' },
+    {value: 'jkblglj5', label: 'adsdad'},    {value: 'выгул', label: 'sadsad' },
+    {value: 'jkblglj6', label: 'adsdad'},
   ];
 
   function customTheme(theme) {

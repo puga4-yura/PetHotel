@@ -1,11 +1,11 @@
 import {combineReducers} from "redux";
-import clientReducer from './clients-reducer';
+import hotelReducer  from './hotel-reducer';
 import profileReducer from './profile-reducer';
 
 
 
 let redusers = combineReducers({
-  clients: clientReducer,
+  hotelReducer : hotelReducer ,
   profile: profileReducer,
   //form: formReducer
 });

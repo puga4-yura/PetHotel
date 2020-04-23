@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from "react-redux";
 import Clients from "./client"
-import {setUsers, personFetchData} from "../../../redux/clients-reducer";
+import {setUsers, personFetchData} from "../../../redux/hotel-reducer";
 
 let mapStateToProps = (state) => {
   return {
