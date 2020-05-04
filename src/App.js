@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import {Header} from "./components/header/header";
+import HeaderContainer from "./components/header/headerContainer";
 import hotelsContainer from "./components/mainPage/hotel/hotels.module.scss";
 import {BrowserRouter, Route} from "react-router-dom";
 import Filter from  "./components/mainPage/filters/filters";
@@ -14,7 +14,7 @@ function App(props) {
   return (
     <BrowserRouter>
     <div className="App">
-        <Header/>
+        <HeaderContainer/>
 
         <div className="main-wrapper">
           <div className="main-wrapper_left-info">

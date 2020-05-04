@@ -10,6 +10,7 @@ class Clients extends Component {
     }, 2000)
 
   };
+
   componentDidUpdate() {
     setTimeout(() => {
       this.props.fetchData("https://randomuser.me/api/?results=100");
@@ -23,18 +24,15 @@ class Clients extends Component {
     })*/
 
   render() {
-
-    console.log(this.props.results);
-debugger;
     return (
       <div>
         {this.props.results.map((person, index) => {
           return <div key={index}>
-                    <div>{index}</div>
-                    <img src={person.picture.medium}/>
-                    <div>{person.name.first}</div>
-                    <div>{person.name.last}</div>
-                </div>
+            <div>{index}</div>
+            <img src={person.picture.medium}/>
+            <div>{person.name.first}</div>
+            <div>{person.name.last}</div>
+          </div>
         })}
       </div>
     )

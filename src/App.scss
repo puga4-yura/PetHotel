@@ -12,7 +12,13 @@ select {
 body {
   overflow: hidden;
   margin: 0;
+
 }
+
+li {
+  outline: none;
+}
+
 input {
   background: transparent;
   border: none;
@@ -25,6 +31,24 @@ input {
   border: none!important;
 }
 
+.css-1pahdxg-control {
+  border: none!important;
+  box-shadow: none!important;
+}
+
+.css-1okebmr-indicatorSeparator {
+  background-color: transparent!important;
+}
+
+.css-yk16xz-control {
+  max-width: 260px;
+}
+
+.css-2b097c-container {
+  width: 100%;
+}
+
+
 .App {
   display: flex;
   height: 100vh;
@@ -34,16 +58,28 @@ input {
     display: flex;
     height: 100%;
     flex-grow: 1;
+    flex-wrap: wrap;
+
+    @media (max-width: 1260px) {
+      height: 100%;
+      overflow: auto;
+    }
 
     > div {
-      width: 50%;
+      flex: 1;
+
+      @media (max-width: 1260px) {
+      flex: auto;
+      width: 100%;
+    }
     }
 
     .main-wrapper_left-info {
+      flex: 1.5;
       border-top: solid 1px #f1f1f1;
       padding-left: 90px;
       padding-top: 45px;
-      width: 60%;
+      //width: 60%;
     }
   }
 }

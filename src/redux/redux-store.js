@@ -1,13 +1,14 @@
 import {combineReducers} from "redux";
 import hotelReducer  from './hotel-reducer';
-import profileReducer from './profile-reducer';
+import headerReducer from './header-reducer';
+import { reducer as formReducer} from 'redux-form'
 
 
 
 let redusers = combineReducers({
   hotelReducer : hotelReducer ,
-  profile: profileReducer,
-  //form: formReducer
+  headerReducer: headerReducer,
+  form: formReducer
 });
 
 export default redusers;

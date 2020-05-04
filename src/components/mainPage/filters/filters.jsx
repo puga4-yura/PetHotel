@@ -3,10 +3,7 @@ import s from './filters.module.scss'
 import Select from 'react-select'
 import makeAnimated from 'react-select/animated'
 
-const option = [
-  {value: 'выгул', label: '' },
-  {value: 'jkblglj', label: ''}
-];
+
 let Filter = () => {
   const option = [
     {value: 'выгул', label: 'sadsad' },
@@ -18,15 +15,21 @@ let Filter = () => {
     {value: 'jkblglj6', label: 'adsdad'},
   ];
 
-  function customTheme(theme) {
-    return{
-      ...theme,
-      colors: {
-        ...theme.colors,
-        primary25 : 'orange',
-        primary: 'green'
-      }
-    }
+  const customTheme = {
+    control: (customTheme) => ({
+      ...customTheme,
+      minHeight: 92,
+    }),
+    dropdownIndicator: (base) => ({
+      ...base,
+      paddingTop: 0,
+      paddingBottom: 0,
+    }),
+    clearIndicator: (base) => ({
+      ...base,
+      paddingTop: 0,
+      paddingBottom: 0,
+    }),
   }
 
   return(
@@ -38,9 +41,10 @@ let Filter = () => {
             theme={customTheme}
             placeholder="Животные"
             сlassName="select"
+            width='200px'
             isMulti
             autoFocus
-            isSearchable
+            //isSearchable
           />
         </div>
         <div className={s.filterContainer_selectWrap}>

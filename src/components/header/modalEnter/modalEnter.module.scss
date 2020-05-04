@@ -1,0 +1,94 @@
+.modal_overflow {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 12;
+
+  .modal_container {
+    max-height: 80%;
+    max-width: 80%;
+    min-width: 60%;
+    min-height: 60%;
+    width: 1000px;
+    border-radius: 15px;
+    display: flex;
+
+    .modal_containerImg {
+      width: 50%;
+      background-image: linear-gradient(143deg, #ffb847 2%, #cd7630 101%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 15px 0 0 15px;
+
+      .modal_imgLogo {
+        height: 268px;
+        width: 378px;
+        background-size: contain;
+        background: url("../../../assets/img/img-modal-enter.png");
+        background-repeat: no-repeat;
+      }
+    }
+
+    .modal_containerForm {
+      border-radius: 0 15px 15px 0;
+      width: 50%;
+      padding: 10px 10px 20px 10px;
+      box-sizing: border-box;
+      background: #ffffff;
+
+      .modal_containerClose {
+        display: flex;
+        justify-content: flex-end;
+
+        .modal_buttonClose {
+          cursor: pointer;
+          width: 16px;
+          height: 16px;
+          background: url("../../../assets/img/icon-close.png") no-repeat;
+        }
+      }
+
+
+  /*    .modal_socialConatainer {
+        margin-top: 57px;
+        display: flex;
+        flex-direction: column;
+
+        .modal_socialTitle {
+          font-size: 16px;
+          color: #3a3a3a;
+          display: flex;
+          justify-content: center;
+        }
+
+        .modal_containerIcon {
+          display: flex;
+          justify-content: center;
+          margin-top: 10px;
+
+          .modal_iconFacebook,
+          .modal_iconGoogle {
+            width: 34px;
+            height: 34px;
+            margin-right: 14px;
+          }
+
+          .modal_iconFacebook {
+            background: url("../../../assets/img/icon-facebook.png");
+          }
+
+          .modal_iconGoogle {
+            background: url("../../../assets/img/icon-g.png");
+          }
+        }
+      }*/
+    }
+  }
+}
