@@ -16,12 +16,17 @@ export default class SimpleSlider extends Component {
       className: "slides",
       arrows: true
     };
+    //debugger;
     return (
+
       <div>
         <Slider {...settings} arrows={true}>
-              <img width='100%' src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSpYD_g4vYnRMVvF43i9hqQP8-B039fXfB42pexCBwDID4ew2j8&usqp=CAU' alt="q"/>
-              <img width='100%' src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSpYD_g4vYnRMVvF43i9hqQP8-B039fXfB42pexCBwDID4ew2j8&usqp=CAU" alt="q"/>
-              <img width='100%' src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSpYD_g4vYnRMVvF43i9hqQP8-B039fXfB42pexCBwDID4ew2j8&usqp=CAU" alt="q"/>
+          {this.props.img.map((photo)=>{
+            return (
+              <img width='100%' src={photo} alt="q"/>
+            )
+          })}
+
         </Slider>
       </div>
     );

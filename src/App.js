@@ -6,6 +6,7 @@ import {BrowserRouter, Route} from "react-router-dom";
 import Filter from  "./components/mainPage/filters/filters";
 import WrappedMap  from "./components/mainPage/map/map"
 import HotelContainer  from "./components/mainPage/hotel/hotelContainer"
+import PersonalPage from "./components/mainPage/personalPage/сabinet";
 
 
 
@@ -29,6 +30,7 @@ function App(props) {
               mapElement={<div style={{ height: `100%` }} />}
             />
           </div>
+          <PersonalPage  />
         </div>
 
     </div>

@@ -1,23 +1,28 @@
 import React from 'react'
 import {connect} from "react-redux";
 import Hotel from "./hotels";
-import {showDescriptionAC, hideDescriptionAC} from "../../../redux/hotel-reducer";
+import {showDescriptionAC, hideDescriptionAC, hotelFetchData} from "../../../redux/hotel-reducer";
 
 
 
 let mapStateToProps =(state) => {
+
   return {
     state: state.hotelReducer
   }
 };
 
-/*let mapDispatchToProps =(dispatch) => {
+let mapDispatchToProps =(dispatch) => {
   return {
-    changeVisibility: () => {
-      dispatch(showDescriptionAC())
-    }
+    showDescription: (id) => {
+      dispatch(showDescriptionAC(id))
+    },
+    hideDescription: (id) => {
+      dispatch(hideDescriptionAC(id))
+    },
+    fetchData: url => {dispatch(hotelFetchData(url))}
   }
-};*/
+};
 
 
-export default connect(mapStateToProps, {showDescriptionAC, hideDescriptionAC})(Hotel)
+export default connect(mapStateToProps, mapDispatchToProps)(Hotel)

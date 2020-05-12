@@ -1,0 +1,12 @@
+.personalContainer {
+  position: fixed;
+  height: 100%;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  background-color: #f8fbff;
+
+  .contentContainer {
+    width: 300px;
+  }
+}
